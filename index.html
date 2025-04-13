@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fibonacci - Gestão Inteligente</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="menu-topo">
+  <div class="menu-container">
+    <div class="logo">Fibonacci</div>
+    <nav class="menu-desktop">
+      <a href="#hero">Início</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#paraquem">Para quem é</a>
+      <a href="#beneficios">Benefícios</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#contato">Contato</a>
+      <a href="funcionalidades/index.html">Funcionalidades</a>
+      <a href="sobre/index.html">Sobre</a>
+      <a href="planos/index.html">Planos</a>
+    </nav>
+    <div class="menu-mobile" onclick="toggleMenu()">☰</div>
+  </div>
+  <nav id="menu-mobile-list" class="menu-mobile-list">
+    <a href="#hero" onclick="toggleMenu()">Início</a>
+    <a href="#funcionalidades" onclick="toggleMenu()">Funcionalidades</a>
+    <a href="#paraquem" onclick="toggleMenu()">Para quem é</a>
+    <a href="#beneficios" onclick="toggleMenu()">Benefícios</a>
+    <a href="#depoimentos" onclick="toggleMenu()">Depoimentos</a>
+    <a href="#contato" onclick="toggleMenu()">Contato</a>
+    <a href="funcionalidades/index.html" onclick="toggleMenu()">Funcionalidades</a>
+    <a href="sobre/index.html" onclick="toggleMenu()">Sobre</a>
+    <a href="planos/index.html" onclick="toggleMenu()">Planos</a>
+  </nav>
+</header>
+
+
+<section id="hero" class="hero">
+  <div class="hero-text">
+    <h1>Transforme sua operação em um sistema inteligente e profissional</h1>
+    <p>Controle pedidos, serviços, estoque e propostas — tudo integrado, onde quer que sua equipe esteja.</p>
+    <div class="buttons">
+      <a href="#contato" class="btn btn-primary">Solicitar Demonstração</a>
+      <a href="#funcionalidades" class="btn btn-secondary">Explorar Funcionalidades</a>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="img/mockup-fibonacci.png" alt="Mockup do sistema Fibonacci">
+  </div>
+</header>
+
+<section id="funcionalidades" class="fade-in" class="funcionalidades">
+  <h2>Funcionalidades que integram toda sua operação</h2>
+  <div class="grid-funcionalidades">
+    <div class="item">
+      <img src="img/mockups-funcionalidades.png" alt="Mockups das funcionalidades" />
+    </div>
+  </div>
+</section>
+
+<section id="paraquem" class="paraquem">
+  <h2>Feito para empresas que entregam mais do que produto</h2>
+  <p class="sub">Ideal para negócios que combinam venda com instalação, personalização ou serviço técnico.</p>
+  <div class="grid-paraquem">
+    <img src="img/para-quem-e.png" alt="Setor de empresas atendidas" />
+  </div>
+</section>
+
+<section id="beneficios" class="fade-in" class="beneficios">
+  <h2>Mais controle. Menos retrabalho. Operação no seu ritmo.</h2>
+  <div class="grid-beneficios">
+    <img src="img/beneficios.png" alt="Benefícios do sistema Fibonacci" />
+  </div>
+</section>
+
+<section id="depoimentos" class="fade-in" class="depoimentos">
+  <h2>Empresas que já transformaram sua operação com a Fibonacci</h2>
+  <div class="grid-depoimentos">
+    <img src="img/depoimentos.png" alt="Depoimentos de clientes satisfeitos" />
+  </div>
+</section>
+
+<section id="contato" class="fade-in" class="contato">
+  <h2>Entre em contato e solicite sua demonstração</h2>
+  <div class="contato-container">
+    <form class="formulario" action="mailto:contato@fibonacci.com.br" method="POST" enctype="text/plain">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <input type="tel" name="telefone" placeholder="Seu telefone">
+      <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="contato-info">
+      <p><strong>E-mail:</strong> contato@fibonacci.com.br</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/550000000000" target="_blank">Clique aqui para conversar</a></p>
+    </div>
+  </div>
+</section>
+
+<script src="js/validacao.js"></script>
+</body>
+</html>
