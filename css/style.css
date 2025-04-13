@@ -1,0 +1,203 @@
+
+/* Animação: menu fixo muda de cor ao rolar */
+.menu-topo.scrolled {
+  background-color: #2F3629;
+  transition: background-color 0.3s ease;
+}
+
+/* Cards com hover (benefícios, planos, depoimentos) */
+.card-hover, .plano, .grid-beneficios img, .grid-depoimentos img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover, .plano:hover, .grid-beneficios img:hover, .grid-depoimentos img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.12);
+}
+
+/* Fade-in nas seções */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Botões com transição de cor */
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-primary:hover {
+  background-color: #9d884c;
+}
+.btn-secondary:hover {
+  background-color: white;
+  color: #3E4B36;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+.menu-topo {
+  background-color: #3E4B36;
+  color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.menu-desktop {
+  display: none;
+}
+.menu-desktop a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+.menu-mobile {
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.menu-mobile-list {
+  display: none;
+  flex-direction: column;
+  background-color: #3E4B36;
+}
+.menu-mobile-list a {
+  color: white;
+  padding: 1rem;
+  border-top: 1px solid #555;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .menu-desktop {
+    display: block;
+  }
+  .menu-mobile {
+    display: none;
+  }
+  .menu-mobile-list {
+    display: none !important;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F8F8F6;
+  color: #2F2F2F;
+}
+h2 {
+  color: #3E4B36;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.hero {
+  background-color: #3E4B36;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-primary {
+  background-color: #BFA36B;
+  color: white;
+}
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+}
+.hero-img {
+  margin-top: 3rem;
+}
+.hero-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+section {
+  padding: 4rem 1rem;
+}
+img {
+  width: 100%;
+  max-width: 960px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+}
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 480px;
+  gap: 1rem;
+}
+.formulario input, .formulario textarea {
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.formulario button {
+  background-color: #3E4B36;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.contato-info {
+  font-size: 1rem;
+  color: #2F2F2F;
+}
+.contato-info a {
+  color: #3E4B36;
+  text-decoration: none;
+  font-weight: bold;
+}

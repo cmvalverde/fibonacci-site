@@ -1,0 +1,84 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F8F8F6;
+  color: #2F2F2F;
+}
+.menu-topo {
+  background-color: #3E4B36;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.menu-desktop a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+.logo {
+  font-weight: bold;
+}
+.pagina {
+  max-width: 1100px;
+  margin: auto;
+  padding: 4rem 1rem;
+}
+.pagina h1 {
+  font-size: 2rem;
+  color: #3E4B36;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.pagina .intro {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.tabela-planos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.plano {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-left: 5px solid #BFA36B;
+  padding: 2rem;
+  border-radius: 8px;
+}
+.plano.destaque {
+  border-left-color: #3E4B36;
+  background-color: #F0F0E5;
+}
+.plano h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #3E4B36;
+}
+.plano .preco {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.plano ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.6;
+}
+@media (min-width: 768px) {
+  .tabela-planos {
+    flex-direction: row;
+  }
+  .plano {
+    flex: 1;
+  }
+}

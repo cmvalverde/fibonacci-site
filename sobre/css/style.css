@@ -1,0 +1,60 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F8F8F6;
+  color: #2F2F2F;
+}
+.menu-topo {
+  background-color: #3E4B36;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.menu-desktop a {
+  color: white;
+  margin-left: 1.5rem;
+  text-decoration: none;
+}
+.logo {
+  font-weight: bold;
+}
+.pagina {
+  max-width: 960px;
+  margin: auto;
+  padding: 4rem 1rem;
+}
+.pagina h1 {
+  font-size: 2rem;
+  color: #3E4B36;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.pagina .intro {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.bloco {
+  margin-bottom: 3rem;
+}
+.bloco h2 {
+  font-size: 1.4rem;
+  color: #3E4B36;
+  margin-bottom: 1rem;
+}
+.bloco p, .bloco ul {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+.bloco ul {
+  padding-left: 1.5rem;
+}
