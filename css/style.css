@@ -1,7 +1,7 @@
 
 /* Animação: menu fixo muda de cor ao rolar */
 .menu-topo.scrolled {
-  background-color: #2F3629;
+  background-color: #F4F2ED;
   transition: background-color 0.3s ease;
 }
 
